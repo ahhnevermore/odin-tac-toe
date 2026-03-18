@@ -1,0 +1,117 @@
+:root {
+  --indigo: #303f9f;
+  --light: #6573c3;
+  --dark: #001970;
+  --background: #121212;
+  --background2: #1e1e1e;
+  --accent: #ffd600;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  height: 100vh;
+}
+
+.nav {
+  background-color: var(--background);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.nav p {
+  font-weight: bold;
+  font-size: 32px;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 15rem;
+}
+.nav button {
+  width: 12rem;
+  height: 4rem;
+  background-color: var(--indigo);
+  border: 2px solid var(--dark);
+  color: white;
+  border-radius: 5px;
+
+  margin-left: 10rem;
+}
+
+.nav button:hover {
+  border-color: var(--accent);
+}
+
+.nav button:active {
+  transform: scale(0.95);
+}
+
+.main {
+  background-color: var(--background2);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.5fr 4fr;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem;
+  grid-column: 1/2;
+  gap: 1rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.tiles p {
+  background-color: var(--background);
+  width: 8rem;
+  height: 8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  border: 2px solid white;
+}
+.names {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5rem;
+}
+
+.names input {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  height: 50%;
+  font-size: 18px;
+  text-align: center;
+
+  color: white;
+}
+
+#p1 {
+  background-color: red;
+  border-color: red;
+}
+#p2 {
+  background-color: blue;
+  border-color: blue;
+}
+
+.notif {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  justify-self: center;
+  align-content: center;
+}
